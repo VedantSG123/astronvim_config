@@ -12,5 +12,17 @@ return {
   {
     "xiyaowong/transparent.nvim",
     lazy = false
+  },
+  {
+    "EdenEast/nightfox.nvim",
+    as = "nightfox",
+    config = function() require("nightfox").setup {} end,
+  },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  {
+    "rebelot/kanagawa.nvim",
+    name = "kanagawa",
+    priority = 1000,
+    config = function() require("kanagawa").setup {} end,
   }
 }
